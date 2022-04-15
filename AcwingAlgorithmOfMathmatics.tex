@@ -63,6 +63,9 @@ bool is_prime(int n)
 
 1.是否是大于等于2的整数，2. 从 2~n-1 中是否有 n 的约数。
 
+不要写$i*i<n$，可能 $i*i$结果溢出 int；也不要在循环条件里写$i<=sqrt(n)$,
+否则每次循环都会调用$sqrt()$。
+
 $d \mid n$，则必有$\frac{n}{d} \mid n$，故不需要枚举到 $n - 1$，即枚举每组
 约数的最小值即可。
 
@@ -166,11 +169,75 @@ $primes[j + 1] * i$ 有更小的质因子 $primes[j]$（$primes[j] \mid i$）这
 
 \chapter{约数}
 \section{试除法求约数}
-
+\begin{lstlisting}
+vector<int> get_divisors(int x)
+{
+vector<int> res;
+for(int i = 1; i <= x / i; i ++)
+{
+    if(x % i == 0)
+    {
+        res.push_back(i);
+        if(i * i != x) res.push_back(x / i);
+    }
+}
+sort(res.begin(), res.end());
+return res;
+}
+\end{lstlisting}
 \section{约数个数}
+若 
+$$n = p_{1}^{a_{1}} + p_{2}^{a_{2}} + p_{3}^{a_{3}} +...+ p_{n}^{a_{n}}$$
+那么 n 的约数个数为
+$$(a_{1} + 1) * (a_{2} + 1) * (a_{3} + 1) *...* (a_{n} + 1)$$
+\begin{lstlisting}
+#include <iostream>
+#include <algorithm>
+#include <unordered_map>
 
+using namespace std;
+
+const int N = 110, mod = 1e9 + 7;
+typedef long long LL;
+
+int main()
+{
+    int n;
+    cin >> n;
+    unordered_map<int, int> primes;
+    
+    while(n --)
+    {
+        int x;
+        cin >> x;
+        for(int i = 2; i <= x / i; i ++)
+        {
+            while(x % i == 0)
+            {
+                x /= i;
+                primes[i] ++;
+            }
+        }
+        if(x > 1) primes[x] ++;
+    }
+    
+    LL res = 1;
+    for(auto t : primes)
+    {
+        LL p = t.first, s = t.second;
+        res = res * (s + 1) % mod;
+    }
+    
+    cout << res << endl;
+    
+    return 0;
+}
+\end{lstlisting}
 \section{约数之和}
-
+若
+$$n = p_{1}^{a_{1}} + p_{2}^{a_{2}} + p_{3}^{a_{3}} +...+ p_{n}^{a_{n}}$$
+那么 n 的约数之和为
+$$(p_{1}^{0} + p_{1}^{1} + ... + p_{1}^{a_{1}}) * (p_{2}^{0} + p_{2}^{1} + ... + p_{2}^{a_{2}}) * (p_{3}^{0} + p_{3}^{1} + ... + p_{3}^{a_{3}}) * (p_{n}^{0} + p_{n}^{1} + ... + p_{n}^{a_{n}})$$
 \section{最小公约数}
 
 \chapter{欧拉函数}
