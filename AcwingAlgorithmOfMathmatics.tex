@@ -238,10 +238,28 @@ int main()
 $$n = p_{1}^{a_{1}} + p_{2}^{a_{2}} + p_{3}^{a_{3}} +...+ p_{n}^{a_{n}}$$
 那么 n 的约数之和为
 $$(p_{1}^{0} + p_{1}^{1} + ... + p_{1}^{a_{1}}) * (p_{2}^{0} + p_{2}^{1} + ... + p_{2}^{a_{2}}) * (p_{3}^{0} + p_{3}^{1} + ... + p_{3}^{a_{3}}) * (p_{n}^{0} + p_{n}^{1} + ... + p_{n}^{a_{n}})$$
-\section{最小公约数}
-
+\section{最大公约数}
+$(a / \gcd(a, b)) * (b / \gcd(a, b))* \gcd(a, b)$ 即$a / \gcd(a, b) * b$为 a和b 的最小公倍数。
+\begin{lstlisting}
+int gcd(int a, int b)
+{
+    return b ? gcd(b, a % b) : a;
+}
+\end{lstlisting}
 \chapter{欧拉函数}
+n的欧拉函数为$[1,\quad n - 1]$内与 n 互质的数的个数。\\
+若 
+\[n = p_{1}^{a_{1}} + p_{2}^{a_{2}} + p_{3}^{a_{3}} +\cdots + p_{n}^{a_{n}}\]
+那么
+\[\phi(n) = n * (1 - \frac{1}{p_{1}}) * (1 - \frac{1}{p_{2}}) *\cdots* (1 - \frac{1}{p_{n}}) = 
+n*(\frac{p_{1} - 1}{p_{1}})*(\frac{p_{2} - 1}{p_{2}})*\cdots *(\frac{p_{n} - 1}{p_{n}})\]
+当 n 为质数时
+\[\phi(n) = n - 1\]
 
+\section{费马小定理}
+若 a 为整数，p 为质数，那么
+\[a^{\phi(p)}\equiv 1 \quad(\bmod \quad p)\]\\即
+\[a^{p-1}\equiv 1 \quad(\bmod \quad p)\]
 \chapter{快速幂}
 \section{快速幂原理}
 \section{快速幂求逆元}

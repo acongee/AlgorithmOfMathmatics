@@ -8,8 +8,9 @@
 \contentsline {section}{\numberline {2.1}试除法求约数}{9}{section.2.1}%
 \contentsline {section}{\numberline {2.2}约数个数}{9}{section.2.2}%
 \contentsline {section}{\numberline {2.3}约数之和}{11}{section.2.3}%
-\contentsline {section}{\numberline {2.4}最小公约数}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.4}最大公约数}{11}{section.2.4}%
 \contentsline {chapter}{\numberline {3}欧拉函数}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}费马小定理}{13}{section.3.1}%
 \contentsline {chapter}{\numberline {4}快速幂}{15}{chapter.4}%
 \contentsline {section}{\numberline {4.1}快速幂原理}{15}{section.4.1}%
 \contentsline {section}{\numberline {4.2}快速幂求逆元}{15}{section.4.2}%
