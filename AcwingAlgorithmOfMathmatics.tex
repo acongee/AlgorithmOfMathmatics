@@ -239,7 +239,7 @@ int main()
 若
 \[n = p_{1}^{a_{1}} + p_{2}^{a_{2}} + p_{3}^{a_{3}} +\cdots+ p_{n}^{a_{n}}\]
 那么 n 的约数之和为
-\[(p_{1}^{0} + p_{1}^{1} + \cdots + p_{1}^{a_{1}}) * (p_{2}^{0} + p_{2}^{1} + \cdots + p_{2}^{a_{2}}) * (p_{3}^{0} + p_{3}^{1} + \cdots + p_{3}^{a_{3}}) * (p_{n}^{0} + p_{n}^{1} + \cdots + p_{n}^{a_{n}})\]
+\[(p_{1}^{0} + p_{1}^{1} + \cdots + p_{1}^{a_{1}}) * (p_{2}^{0} + p_{2}^{1} + \cdots + p_{2}^{a_{2}}) * (p_{3}^{0} + p_{3}^{1} + \cdots + p_{3}^{a_{3}}) *\cdots*(p_{n}^{0} + p_{n}^{1} + \cdots + p_{n}^{a_{n}})\]
 \section{最大公约数}
 $(a / \gcd(a, b)) * (b / \gcd(a, b))* \gcd(a, b)$ 即$a / \gcd(a, b) * b$为 a和b 的最小公倍数。
 \begin{lstlisting}
@@ -277,6 +277,9 @@ while(b)
 return res;
 }
 \end{lstlisting}
+
+从低到高枚举指数的每一二进制位，若该位为 1 则结果乘以一次 a，同时每次枚举每一位时 a 都要 $a = a * a$。每次直接将指数 b 的最后一位右移去掉。
+eg: 当判断第一位是否为 1 时，$a = a^{1}$; 第二位是否为 1 时, $a = a^{2}$, ..., 第n位是否为 1 时, $a = a^{n}$. (类似 a 进制).
 \section{快速幂求逆元}
 当模数 p 为质数时，a 的逆元即为 $a^{p-2}$，故直接用快速幂计算即可。
 \begin{lstlisting}
@@ -284,8 +287,38 @@ qmi(a, p - 2, p);
 \end{lstlisting}
 \chapter{扩展欧几里得算法（粉碎机）}
 \section{扩展欧几里得算法原理}
+\begin{lstlisting}
+int exgcd(int a, int b, int &x, int &y)
+{
+    if(!b)
+    {
+        x = 1, y = 0;
+        return a;
+    }
+    
+    int d = exgcd(b, a % b, y, x);
+    y = y - a / b * x;
+    return d;
+}
+\end{lstlisting}
 \section{扩展欧几里得算法求逆元}
-
+\begin{lstlisting}
+int exgcd(int a, int p, int &x, int &y)
+{
+    if(!p)
+    {
+        x = 1, y = 0;
+        return a;
+    }
+    
+    int d = exgcd(p, a % p, y, x);
+    y = y - a / p * x;
+    return d;
+}
+\end{lstlisting}
+运算结束后首先判断返回值 d 是否为 1, 因为 a 的逆元存在的条件是 $\gcd(a, p) = 1$，即两数互质，若 a 的逆元存在则
+\[(x + p) \% p\]
+即为 a 的逆元
 \chapter{中国剩余定理（孙子定理）}
 
 \chapter{组合数}

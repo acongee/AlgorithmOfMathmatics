@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.13)  16 APR 2022 00:08
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.13)  16 APR 2022 09:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -521,7 +521,12 @@ Overfull \hbox (1.81392pt too wide) in paragraph at lines 165--166
 Chapter 2.
 [9
 
-] [10] [11] [12
+] [10]
+Overfull \hbox (6.11302pt too wide) detected at line 242
+\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 p[] \OT1/cmr/m/n/10.53937 + \OML/cmm/m/it/10.53937 p[] \OT1/cmr/m/n/10.53937 + [] + \OML/cmm/m/it/10.53937 p[]\OT1/cmr/m/n/10.53937 ) \OMS/cmsy/m/n/10.53937 ^^C \OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 p[] \OT1/cmr/m/n/10.53937 + \OML/cmm/m/it/10.53937 p[] \OT1/cmr/m/n/10.53937 + [] + \OML/cmm/m/it/10.53937 p[]\OT1/cmr/m/n/10.53937 ) \OMS/cmsy/m/n/10.53937 ^^C \OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 p[] \OT1/cmr/m/n/10.53937 + \OML/cmm/m/it/10.53937 p[] \OT1/cmr/m/n/10.53937 + [] + \OML/cmm/m/it/10.53937 p[]\OT1/cmr/m/n/10.53937 ) \OMS/cmsy/m/n/10.53937 ^^C [] ^^C \OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 p[] \OT1/cmr/m/n/10.53937 + \OML/cmm/m/it/10.53937 p[] \OT1/cmr/m/n/10.53937 + [] + \OML/cmm/m/it/10.53937 p[]\OT1/cmr/m/n/10.53937 )
+ []
+
+[11] [12
 
 ]
 Chapter 3.
@@ -534,15 +539,15 @@ Overfull \hbox (2.39441pt too wide) detected at line 257
 
 ]
 Chapter 4.
-[15] [16
-
-]
+[15] [16]
 Chapter 5.
-[17] [18
+[17
 
-]
+] [18]
 Chapter 6.
-[19] [20
+[19
+
+] [20
 
 ]
 Chapter 7.
@@ -559,10 +564,10 @@ Package rerunfilecheck Info: File `AcwingAlgorithmOfMathmatics.out' has not chan
 (rerunfilecheck)             Checksum: 4FBB08F43C91F32455FCFB6BEC8C580F;2195.
  ) 
 Here is how much of TeX's memory you used:
- 15345 strings out of 476179
- 333545 string characters out of 5809544
+ 15354 strings out of 476179
+ 333611 string characters out of 5809544
  875456 words of memory out of 5000000
- 35869 multiletter control sequences out of 15000+600000
+ 35878 multiletter control sequences out of 15000+600000
  475241 words of font info for 84 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,6n,97p,394b,1762s stack positions out of 10000i,1000n,20000p,200000b,200000s
