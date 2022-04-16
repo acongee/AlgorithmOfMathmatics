@@ -10,18 +10,20 @@
 \contentsline {section}{\numberline {2.3}约数之和}{11}{section.2.3}%
 \contentsline {section}{\numberline {2.4}最大公约数}{15}{section.2.4}%
 \contentsline {chapter}{\numberline {3}欧拉函数}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}费马小定理}{17}{section.3.1}%
-\contentsline {chapter}{\numberline {4}快速幂}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}快速幂原理}{19}{section.4.1}%
-\contentsline {section}{\numberline {4.2}快速幂求逆元}{19}{section.4.2}%
-\contentsline {chapter}{\numberline {5}扩展欧几里得算法（粉碎机）}{21}{chapter.5}%
-\contentsline {section}{\numberline {5.1}扩展欧几里得算法原理}{21}{section.5.1}%
-\contentsline {section}{\numberline {5.2}扩展欧几里得算法求逆元}{21}{section.5.2}%
-\contentsline {chapter}{\numberline {6}中国剩余定理（孙子定理）}{23}{chapter.6}%
-\contentsline {chapter}{\numberline {7}组合数 $C_a^b$}{25}{chapter.7}%
-\contentsline {section}{\numberline {7.1}a、b较小的组合数}{25}{section.7.1}%
-\contentsline {section}{\numberline {7.2}a、b较大的组合数}{26}{section.7.2}%
-\contentsline {section}{\numberline {7.3}a、b特别大的组合数}{27}{section.7.3}%
-\contentsline {section}{\numberline {7.4}不取模的高精度组合数}{29}{section.7.4}%
-\contentsline {chapter}{\numberline {8}容斥原理}{33}{chapter.8}%
-\contentsline {chapter}{\numberline {9}博弈论}{35}{chapter.9}%
+\contentsline {section}{\numberline {3.1}欧拉函数筛}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.2}欧拉定理}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}费马小定理}{18}{section.3.3}%
+\contentsline {chapter}{\numberline {4}快速幂}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}快速幂原理}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}快速幂求逆元}{21}{section.4.2}%
+\contentsline {chapter}{\numberline {5}扩展欧几里得算法（粉碎机）}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}扩展欧几里得算法原理}{23}{section.5.1}%
+\contentsline {section}{\numberline {5.2}扩展欧几里得算法求逆元}{23}{section.5.2}%
+\contentsline {chapter}{\numberline {6}中国剩余定理（孙子定理）}{25}{chapter.6}%
+\contentsline {chapter}{\numberline {7}组合数 $C_a^b$}{27}{chapter.7}%
+\contentsline {section}{\numberline {7.1}a、b较小的组合数}{27}{section.7.1}%
+\contentsline {section}{\numberline {7.2}a、b较大的组合数}{28}{section.7.2}%
+\contentsline {section}{\numberline {7.3}a、b特别大的组合数}{29}{section.7.3}%
+\contentsline {section}{\numberline {7.4}不取模的高精度组合数}{31}{section.7.4}%
+\contentsline {chapter}{\numberline {8}容斥原理}{35}{chapter.8}%
+\contentsline {chapter}{\numberline {9}博弈论}{37}{chapter.9}%
