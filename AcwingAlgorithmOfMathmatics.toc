@@ -26,5 +26,6 @@
 \contentsline {section}{\numberline {7.2}a、b较大的组合数}{28}{section.7.2}%
 \contentsline {section}{\numberline {7.3}a、b特别大的组合数}{29}{section.7.3}%
 \contentsline {section}{\numberline {7.4}不取模的高精度组合数}{31}{section.7.4}%
+\contentsline {section}{\numberline {7.5}卡特兰数}{33}{section.7.5}%
 \contentsline {chapter}{\numberline {8}容斥原理}{35}{chapter.8}%
 \contentsline {chapter}{\numberline {9}博弈论}{37}{chapter.9}%

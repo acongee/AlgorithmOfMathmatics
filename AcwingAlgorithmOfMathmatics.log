@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.13)  17 APR 2022 09:14
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.13)  17 APR 2022 19:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -672,12 +672,12 @@ Chapter 8.
 Chapter 9.
 [37] (./AcwingAlgorithmOfMathmatics.aux)
 Package rerunfilecheck Info: File `AcwingAlgorithmOfMathmatics.out' has not changed.
-(rerunfilecheck)             Checksum: DF7F116066948F56C880C6A980954AF8;2993.
+(rerunfilecheck)             Checksum: CD067F2DD0968117CBBC58560CA3EE49;3080.
  ) 
 Here is how much of TeX's memory you used:
  16705 strings out of 476179
  353006 string characters out of 5809544
- 897011 words of memory out of 5000000
+ 897109 words of memory out of 5000000
  37187 multiletter control sequences out of 15000+600000
  483734 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
