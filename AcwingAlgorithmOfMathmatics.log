@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.13)  16 APR 2022 22:20
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.13)  17 APR 2022 09:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -620,42 +620,42 @@ Chapter 6.
 Chapter 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 547.
+(hyperref)                removing `math shift' on input line 548.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 547.
+(hyperref)                removing `subscript' on input line 548.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 547.
+(hyperref)                removing `superscript' on input line 548.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 547.
+(hyperref)                removing `math shift' on input line 548.
 
 
-Overfull \hbox (66.9419pt too wide) in paragraph at lines 565--566
+Overfull \hbox (66.9419pt too wide) in paragraph at lines 566--567
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [27] [28]
-Overfull \hbox (18.1593pt too wide) in paragraph at lines 611--612
+Overfull \hbox (18.1593pt too wide) in paragraph at lines 612--613
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (66.9419pt too wide) in paragraph at lines 618--619
+Overfull \hbox (66.9419pt too wide) in paragraph at lines 619--620
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [29]
-Overfull \hbox (45.26074pt too wide) in paragraph at lines 660--661
+Overfull \hbox (45.26074pt too wide) in paragraph at lines 661--662
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [30] [31]
-Overfull \hbox (18.1593pt too wide) in paragraph at lines 748--749
+Overfull \hbox (18.1593pt too wide) in paragraph at lines 749--750
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -675,11 +675,11 @@ Package rerunfilecheck Info: File `AcwingAlgorithmOfMathmatics.out' has not chan
 (rerunfilecheck)             Checksum: DF7F116066948F56C880C6A980954AF8;2993.
  ) 
 Here is how much of TeX's memory you used:
- 16679 strings out of 476179
- 351232 string characters out of 5809544
+ 16705 strings out of 476179
+ 353006 string characters out of 5809544
  897011 words of memory out of 5000000
- 37163 multiletter control sequences out of 15000+600000
- 483726 words of font info for 122 fonts, out of 8000000 for 9000
+ 37187 multiletter control sequences out of 15000+600000
+ 483734 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,7n,97p,394b,1784s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

@@ -460,7 +460,7 @@ void solve()
 \section{费马小定理}
 当$p$为质数时，欧拉定理即为一个特例---费马小定理。
 
-若 a 为任意正整数,p 为质数,那么
+若$p$为质数并且$a$不是$p$的倍数,那么
 \[a^{\phi(p)}\equiv 1 \pmod{p}\]\\即
 \[a^{p-1}\equiv 1 \pmod{p}\]
 \chapter{快速幂}
@@ -497,7 +497,8 @@ qmi(a, p - 2, p);
 \[a * x + b * y = \gcd(a, b)\]
 这样的$\gcd(a,b)$是上述条件下用$a,b$能凑出来的最小的正整数。
 
-这样的$a,b$的所有线性组合必定是$\gcd(a,b)$的倍数。
+这样的$a,b$的所有线性组合必定是$\gcd(a,b)$的倍数。有一个推论：{\itshape 一个整数是$a$和$b$的线性组合，
+当且仅当它是$\gcd(a,b)$的倍数。}
 \section{扩展欧几里得算法原理}
 \begin{lstlisting}
 int exgcd(int a, int b, int &x, int &y)
