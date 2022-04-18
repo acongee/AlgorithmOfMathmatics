@@ -544,6 +544,111 @@ int exgcd(int a, int p, int &x, int &y)
 \[(x + p) \% p\]
 为 a 的逆元
 \chapter{中国剩余定理（孙子定理）}
+\section{中国剩余定理的形式}
+中国剩余定理给出了以下一元线性同余方程组
+$$
+\left\{\begin{matrix}
+    x \equiv a_{1} \pmod{m_{1}}\\
+    x \equiv a_{2} \pmod{m_{2}} \\
+    \vdots \\
+    x \equiv a_{n} \pmod{m_{n}}
+    \end{matrix}\right.
+$$
+有解的判定条件以及有解时解的形式。
+
+假设整数$m_1,m_2,\ldots,m_n$两两互质，则对任意整数$a_1,a_2,\ldots,a_n$，以上方程组有解。以下给出构造解的方法：
+\begin{itemize}
+    \item 
+    设$M=m_1*m_2*\cdots*m_n=\prod_{i=1}^{n} m_i$，并设$M_i = M / m_i, \forall i \in \{1,2,\cdots ,n\}$，即$M_i$是除了$m_i$以外的所有$m$的乘积。
+    \item
+    设$t_i=M_i^{-1}$为$M_i$模$m_i$的逆元，即$t_i M_i \equiv 1 \pmod{m_i}, \forall i \in \{1,2,\cdots ,n\}$。
+    \item
+    在模$M$的意义下，方程组只有一个解$\sum_{i = 1}^{n} a_i t_i M_i$。
+\end{itemize}
+
+\section{扩展：模数不互质的情况}
+当给出的$m_1,m_2,\ldots,m_n$不满足两两互质时也可以尝试构造解。给定下列方程组
+$$
+\left\{\begin{matrix}
+    x \equiv a_{1} \pmod{m_{1}}\\
+    x \equiv a_{2} \pmod{m_{2}}
+    \end{matrix}\right.
+$$
+将方程组转换为不定方程$x = pm_1 + a_1 = qm_2 + a_2$，其中$p,q$为整数，则有$pm_1 - qm_2 = a_2 - a_1$。由裴蜀定理可知当且仅当$\gcd(m1, m2) \mid (a_2 - a_1)$
+时有解，否则无解。若有解则可以通过扩展欧几里得找到一组满足条件的$(p, q)$，则原方程组的解为$x \equiv b \pmod{M}$，其中$b=pm_1 + a_1$，$M = \frac{m1}{\gcd(m1, m2)} * m2 = lcm(m1, m2)$。
+
+
+若需要给出最小非负解：一组满足条件的解${p, q}$可以改写成表示所有解的形式
+$$
+\left\{\begin{matrix}
+    p = p + k\frac{m2}{d}\\
+    q = q - k\frac{m1}{d}
+    \end{matrix}\right.
+$$
+其中$\forall k \in \mathbb{Z}$，运算\verb|(p % (m2/d) + (m2/d)) % (m2/d)|即可得到最小非负解。
+
+若方程组中有多个方程，则可以通过合并方程直至只剩下一个方程的方式来求解。将$p = p + k\frac{m2}{d}$代入$x = pm_1 + a_1$可得
+\[x = (p + k\frac{m_2}{d})m_1 + a_1=k\frac{m_1 m_2}{d} + pm_1+a_1\]
+则有新方程$x = km + a$，其中$m = \frac{m_1 m_2}{d} = lcm(m_1, m_2) = m_1/m_2 * \gcd(m_1, m_2)$，$a = pm_1 + a_1$，重复以上合并步骤直到只剩一个方程即可。
+当只剩一个方程时，我们让这个方程$k = 0$即可得到解$x = pm_1+a_1$，即将方程合并后的$a$，注意要对$lcm(m_1,m_2) = m$取模。
+
+下面给出{\itshape AcWing 204. 表达整数的奇怪方式}的代码
+\begin{lstlisting}
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+typedef long long LL;
+
+
+LL exgcd(LL a, LL b, LL &x, LL &y)
+{
+    if (!b)
+    {
+        x = 1, y = 0;
+        return a;
+    }
+
+    LL d = exgcd(b, a % b, y, x);
+    y -= a / b * x;
+    return d;
+}
+
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    LL x = 0, m1, a1;
+    cin >> m1 >> a1;
+    for (int i = 0; i < n - 1; i ++ )
+    {
+        LL m2, a2;
+        cin >> m2 >> a2;
+        LL k1, k2;
+        LL d = exgcd(m1, m2, k1, k2);
+        if ((a2 - a1) % d)
+        {
+            x = -1;
+            break;
+        }
+
+        k1 = k1 * (a2 - a1) / d;
+        k1 = (k1 % (m2 / d) + m2 / d) % (m2 / d);//取最小非负解
+
+        a1 = k1 * m1 + a1;//计算合并后方程的 a
+        m1 = abs(m1 / d * m2);//计算合并后方程的 m = lcm(m1, m2)
+    }
+
+    if (x != -1) x = (a1 % m1 + m1) % m1;// 答案要对 lcm(m1, m2) 即现在的 m1 取模
+
+    cout << x << endl;
+
+    return 0;
+}
+\end{lstlisting}
 
 \chapter{组合数 $C_a^b$}
 \section{a、b较小的组合数}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.13)  17 APR 2022 19:36
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.13)  18 APR 2022 11:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -612,75 +612,91 @@ Chapter 5.
 
 ] [24]
 Chapter 6.
-[25
 
-] [26
+Underfull \vbox (badness 2818) has occurred while \output is active []
 
-]
+ [25
+
+] [26]
+Overfull \hbox (1.89844pt too wide) in paragraph at lines 642--643
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+Overfull \hbox (94.04333pt too wide) in paragraph at lines 645--647
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[28]
 Chapter 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 548.
+(hyperref)                removing `math shift' on input line 653.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 548.
+(hyperref)                removing `subscript' on input line 653.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 548.
+(hyperref)                removing `superscript' on input line 653.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 548.
+(hyperref)                removing `math shift' on input line 653.
 
 
-Overfull \hbox (66.9419pt too wide) in paragraph at lines 566--567
+Overfull \hbox (66.9419pt too wide) in paragraph at lines 671--672
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[27] [28]
-Overfull \hbox (18.1593pt too wide) in paragraph at lines 612--613
+[29
+
+] [30]
+Overfull \hbox (18.1593pt too wide) in paragraph at lines 717--718
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (66.9419pt too wide) in paragraph at lines 619--620
+Overfull \hbox (66.9419pt too wide) in paragraph at lines 724--725
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[29]
-Overfull \hbox (45.26074pt too wide) in paragraph at lines 661--662
+[31]
+Overfull \hbox (45.26074pt too wide) in paragraph at lines 766--767
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[30] [31]
-Overfull \hbox (18.1593pt too wide) in paragraph at lines 749--750
+[32] [33]
+Overfull \hbox (18.1593pt too wide) in paragraph at lines 854--855
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32] [33] [34
+ [34] [35] [36
 
 ]
 Chapter 8.
-[35] [36
+[37] [38
 
 ]
 Chapter 9.
-[37] (./AcwingAlgorithmOfMathmatics.aux)
+[39] (./AcwingAlgorithmOfMathmatics.aux)
 Package rerunfilecheck Info: File `AcwingAlgorithmOfMathmatics.out' has not changed.
-(rerunfilecheck)             Checksum: CD067F2DD0968117CBBC58560CA3EE49;3080.
+(rerunfilecheck)             Checksum: 332A8A5D14315F626388E125818B54AC;3350.
  ) 
 Here is how much of TeX's memory you used:
- 16705 strings out of 476179
- 353006 string characters out of 5809544
- 897109 words of memory out of 5000000
- 37187 multiletter control sequences out of 15000+600000
+ 16749 strings out of 476179
+ 354813 string characters out of 5809544
+ 897404 words of memory out of 5000000
+ 37231 multiletter control sequences out of 15000+600000
  483734 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,7n,97p,394b,1784s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,8n,97p,394b,1784s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on AcwingAlgorithmOfMathmatics.pdf (37 pages).
+Output written on AcwingAlgorithmOfMathmatics.pdf (39 pages).

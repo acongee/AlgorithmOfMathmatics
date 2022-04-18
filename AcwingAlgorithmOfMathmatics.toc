@@ -21,11 +21,13 @@
 \contentsline {section}{\numberline {5.2}扩展欧几里得算法原理}{23}{section.5.2}%
 \contentsline {section}{\numberline {5.3}扩展欧几里得算法求逆元}{24}{section.5.3}%
 \contentsline {chapter}{\numberline {6}中国剩余定理（孙子定理）}{25}{chapter.6}%
-\contentsline {chapter}{\numberline {7}组合数 $C_a^b$}{27}{chapter.7}%
-\contentsline {section}{\numberline {7.1}a、b较小的组合数}{27}{section.7.1}%
-\contentsline {section}{\numberline {7.2}a、b较大的组合数}{28}{section.7.2}%
-\contentsline {section}{\numberline {7.3}a、b特别大的组合数}{29}{section.7.3}%
-\contentsline {section}{\numberline {7.4}不取模的高精度组合数}{31}{section.7.4}%
-\contentsline {section}{\numberline {7.5}卡特兰数}{33}{section.7.5}%
-\contentsline {chapter}{\numberline {8}容斥原理}{35}{chapter.8}%
-\contentsline {chapter}{\numberline {9}博弈论}{37}{chapter.9}%
+\contentsline {section}{\numberline {6.1}中国剩余定理的形式}{25}{section.6.1}%
+\contentsline {section}{\numberline {6.2}扩展：模数不互质的情况}{26}{section.6.2}%
+\contentsline {chapter}{\numberline {7}组合数 $C_a^b$}{29}{chapter.7}%
+\contentsline {section}{\numberline {7.1}a、b较小的组合数}{29}{section.7.1}%
+\contentsline {section}{\numberline {7.2}a、b较大的组合数}{30}{section.7.2}%
+\contentsline {section}{\numberline {7.3}a、b特别大的组合数}{31}{section.7.3}%
+\contentsline {section}{\numberline {7.4}不取模的高精度组合数}{33}{section.7.4}%
+\contentsline {section}{\numberline {7.5}卡特兰数}{35}{section.7.5}%
+\contentsline {chapter}{\numberline {8}容斥原理}{37}{chapter.8}%
+\contentsline {chapter}{\numberline {9}博弈论}{39}{chapter.9}%
